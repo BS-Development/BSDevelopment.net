@@ -11,7 +11,7 @@ nav ul li {
 }
 
 header .logo a {
-    background-image: url("Images/BSDEVLOGO.png");
+    background-image: url("BSDEVLOGO.png");
     background-size: 100px;
     background-repeat: no-repeat;
     position: relative;
@@ -62,16 +62,18 @@ ul.contact li{
 }
 
 li.GmailLogo {
-    background-image: url("Images/gmail.png");
+    background-image: url("gmail.png");
 }
 li.TwitterLogo {
-    background-image: url("Images/twitter.png");
+    background-image: url("twitter.png");
 }
 li.InstaLogo {
-    background-image: url("Images/insta.jpeg");
+    background-image: url("insta.jpeg");
 }
 
 img {
-    background-color: black;
-    background-image: url("Images/insta.jpeg");
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+
 }
