@@ -1,79 +1,116 @@
-ul.navigation {
-    margin-top: 60px;
+* {
+    margin: 0;
     padding: 0;
-    text-align: center;
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-header .logo a {
-    background-image: url("BSDEVLOGO.png");
-    background-size: 100px;
-    background-repeat: no-repeat;
-    position: relative;
-    top: -40px;
-    display: inline-block;
-    height: 100px;
-    text-indent: -999999px;
-    width: 100px;
-}
-
-header nav ul li a:active {
-    color: green;
-}
-
-header nav ul li a:hover {
-    color: orange;
-    
-}
-
-header nav ul li a {
-    text-decoration: none;
 }
 
 body {
-    background-color: cyan
-}
-
-ul.contact {
-    margin-top: 60px;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
-}
-
-ul.contact li{
-    display: inline-block;
-    margin: 100px;
-
-    background-size: 100px;
+    background-image: url(images/background.jpg);
     background-repeat: no-repeat;
-    border-radius: 50px;
+    background-size: cover;
+
+
+}
+
+/*Start of Navigation styling*/
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+nav p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    font-size: 24px;
+    line-height: 55px;
+    text-decoration: underline;
+    float: left;
+    padding: 0px 20px;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
     position: relative;
-    top: -40px;
+}
+nav ul li a {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li{
+    width: 180px;
+    border-radius: 4px;
+}
+
+nav ul li ul li a{
+    padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f3f3f3;
+}
+/*End of Navigation styling*/
+/* contact styling*/
+
+ul.contact  {
+
+    margin-top: 25%;
+    text-align: center;
+}
+
+ul.contact li {
     display: inline-block;
-    height: 100px;
-    text-indent: -9px;
-    width: 100px;
+    padding: 40px;
 }
 
-li.GmailLogo {
-    background-image: url("gmail.png");
-}
-li.TwitterLogo {
-    background-image: url("twitter.png");
-}
-li.InstaLogo {
-    background-image: url("insta.jpeg");
+li.contactlogo a img{
+   border-radius: 50%; 
 }
 
-img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+/*End of contact styling*/
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+}
+
+p.infoaboutme {
+    align-items: center;
+    color: white;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    height: 25em;
+    margin-top: 75px;
+    padding: 76px;;
+}
+
+p.infoaboutme a {
+    text-decoration: none;
+    color: white;
 }
